@@ -1,0 +1,92 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+.grid {
+    width: 650px;
+    height: 650px;
+    display: grid;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    margin: 16px;
+    gap: 16px;
+    
+}
+
+
+button {
+    border: 2px solid;
+    border-radius: 0.75em;;
+    padding: 0.5em 1em;
+    font-size: 12px;
+    width: 100px;
+    border-color: black;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.gray {
+    background-color: gray;
+    color:white;
+}
+
+.rainbow {
+    background: linear-gradient(to bottom right, red, orange, yellow, green, blue);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.2)
+}
+
+input {
+    border-radius: 0.75em;
+    padding: 0.5em 1em;
+    margin-right: 16px;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    font-size: 24px;
+    background: gray;
+    align-items: center;
+    justify-content: center;
+    padding: 24px
+}
+
+#grid:hover {
+    border: 1px solid gray;
+}

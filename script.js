@@ -38,7 +38,7 @@ clearBtn.addEventListener('click', () => {
 sizeBtn.addEventListener('click', () => {
     let board = document.querySelector('.grid');
     let removeSquare = board.querySelectorAll('div');
-    removeSquare.forEach((div) => div.style.backgroundColor = 'white');
+    removeSquare.forEach((div) => div.remove());
     click = false;
     inputSize.addEventListener('change', changeSize(inputSize.value));
 })
